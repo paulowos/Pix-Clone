@@ -20,6 +20,7 @@ public static class Program
         builder.Services.AddDbContext<AccountContext>();
         builder.Services.AddScoped<AccountContext, AccountContext>();
         builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+        builder.Services.AddScoped<IBankRepository, BankRepository>();
 
         var app = builder.Build();
 
