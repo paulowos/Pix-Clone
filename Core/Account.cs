@@ -4,13 +4,13 @@ namespace Core;
 
 public class Account
 {
-    [Key] public int Id { get; set; }
+    [Key] public int Id { get; init; }
 
-    [Required] [MinLength(3)] public string Name { get; set; }
+    [Required] [MinLength(3)] public string Name { get; init; } = null!;
 
-    [Required] public int BankCode { get; set; }
+    [Required] public int BankId { get; init; }
 
-    [Required] public string BankName { get; set; }
+    public Bank Bank { get; init; } = null!;
 
-    [Required] [MinLength(11)] public string PixKey { get; set; }
+    [Required] [MinLength(11)] public string PixKey { get; init; } = null!;
 }
