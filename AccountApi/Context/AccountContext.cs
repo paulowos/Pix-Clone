@@ -15,4 +15,9 @@ public class AccountContext(DbContextOptions<AccountContext> options) : DbContex
                                "Server=localhost;Database=AccountCentralBank;User id=postgres;Password=central_bank";
         optionsBuilder.UseNpgsql(connectionString);
     }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Account>().HasIndex(a => a.PixKey).IsUnique();
+    }
 }
