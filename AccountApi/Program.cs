@@ -1,4 +1,6 @@
 using AccountApi.Context;
+using AccountApi.Models.Interfaces;
+using AccountApi.Repositories;
 
 namespace AccountApi;
 
@@ -17,6 +19,7 @@ public static class Program
         builder.Services.AddSwaggerGen();
         builder.Services.AddDbContext<AccountContext>();
         builder.Services.AddScoped<AccountContext, AccountContext>();
+        builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
         var app = builder.Build();
 
