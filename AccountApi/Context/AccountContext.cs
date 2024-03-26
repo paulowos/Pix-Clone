@@ -5,7 +5,8 @@ namespace AccountApi.Context;
 
 public class AccountContext(DbContextOptions<AccountContext> options) : DbContext(options)
 {
-    public DbSet<Account> Accounts { get; set; } = null!;
+    public DbSet<Account> Accounts { get; init; } = null!;
+    public DbSet<Bank> Banks { get; init; } = null!;
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
