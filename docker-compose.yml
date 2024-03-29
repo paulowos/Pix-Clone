@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  account_db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 'central_bank'
+      POSTGRES_DB: AccountCentralBank
+    ports:
+        - '5432:5432'

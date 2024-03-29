@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CentralBank", "CentralBank", "{469BD560-5A04-4A3B-8053-BF96ADA4C1AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{4FBBEC27-BDCF-45E4-9FC2-6F0CA48AED30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountApi", "AccountApi\AccountApi.csproj", "{F5574F05-7690-4C8D-A789-E017B88FCE15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4FBBEC27-BDCF-45E4-9FC2-6F0CA48AED30} = {469BD560-5A04-4A3B-8053-BF96ADA4C1AF}
+		{F5574F05-7690-4C8D-A789-E017B88FCE15} = {469BD560-5A04-4A3B-8053-BF96ADA4C1AF}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FBBEC27-BDCF-45E4-9FC2-6F0CA48AED30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBBEC27-BDCF-45E4-9FC2-6F0CA48AED30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBBEC27-BDCF-45E4-9FC2-6F0CA48AED30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBBEC27-BDCF-45E4-9FC2-6F0CA48AED30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5574F05-7690-4C8D-A789-E017B88FCE15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5574F05-7690-4C8D-A789-E017B88FCE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5574F05-7690-4C8D-A789-E017B88FCE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5574F05-7690-4C8D-A789-E017B88FCE15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
